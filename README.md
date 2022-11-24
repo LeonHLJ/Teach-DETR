@@ -60,6 +60,8 @@ In this paper, we present a novel training scheme, namely Teach-DETR, to learn b
 | DINO $\ddagger$ | Swin-L (IN-22K, 384) | 36 | 900 | 57.8 |
 | DINO $\ddagger$ + Aux | Swin-L (IN-22K, 384) | 36 | 900 | 58.9 $\color{green}{(+1.1)}$ |
 
+Note: all deformable-DETR-based detectors are in the two-stage manner.
+
 $\dagger$ tricks denote dropout rate 0 within transformer, mixed query selection and look forward twice.
 
 $\ddagger$ using top 300 predictions for evaluation.
