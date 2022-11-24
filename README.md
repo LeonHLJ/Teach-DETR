@@ -64,3 +64,15 @@ $\ddagger$ using top 300 predictions for evaluation.
 ## License
 
 This project is released under the MIT license. Please see the [LICENSE](LICENSE) file for more information.
+
+## Citation
+```bibtex
+@misc{zhang2022dino,
+      title={DINO: DETR with Improved DeNoising Anchor Boxes for End-to-End Object Detection}, 
+      author={Linjiang Huang and Kaixin Lu and Guanglu Song and Liang Wang and Si Liu and Yu Liu and Hongsheng Li},
+      year={2022},
+      eprint={2211.11953},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
