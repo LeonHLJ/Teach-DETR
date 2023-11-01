@@ -72,7 +72,7 @@ This project is released under the MIT license. Please see the [LICENSE](LICENSE
 
 ## Citation
 ```bibtex
-@misc{huang2022teachdetr,
+@misc{huang2023teachdetr,
       title={Teach-DETR: Better Training DETR with Teachers}, 
       author={Linjiang Huang and Kaixin Lu and Guanglu Song and Liang Wang and Si Liu and Yu Liu and Hongsheng Li},
       journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
