@@ -8,8 +8,8 @@
 ### Coming soon.
 
 - [ ] Release auxiliary boxes of MSCOCO 2017
+- [ X ] Release code for H-Deformable DETR
 - [ ] Release code for DINO
-- [ ] Release code for H-Deformable DETR
 - [ ] Release models
 
 
