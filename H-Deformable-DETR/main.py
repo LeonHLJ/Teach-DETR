@@ -158,9 +158,9 @@ def get_args_parser():
     parser.add_argument('--ensemble', action='store_true',
                         help="Train with logit ensemble ")
     parser.add_argument("--lambda_ensemble", default=1.0, type=float)
-    parser.add_argument('--ext-ann-files', default={'retinanet':'/mnt/lustre/huanglj.vendor/dataset/coco/swin_small_retinanet_nms_0.3_top_50_det_results.json',\
-        'mask_rcnn':'/mnt/lustre/huanglj.vendor/dataset/coco/swin_small_mask_rcnn_det_results.json',}, help="extra annotation file.") 
-    parser.add_argument('--ext-ann-weights', default={'retinanet':0.4, 'mask_rcnn':0.0}, help="extra annotation file.") 
+    parser.add_argument('--ext-ann-files', default={'retinanet':'./dataset/coco/swin_small_retinanet_nms_0.3_top_50_det_results.json',\
+        'mask_rcnn':'./dataset/coco/swin_small_mask_rcnn_det_results.json',}, help="extra annotation file.") 
+    parser.add_argument('--ext-ann-weights', default={'retinanet':0.5, 'mask_rcnn':0.5}, help="extra annotation file.") 
 
     parser.add_argument('--logit-distill', action='store_true',
                         help="Train with logit distillation ")
@@ -557,7 +557,7 @@ if __name__ == "__main__":
     cur_path = os.getcwd()
     task_name = cur_path.split('/')[-2]
     project_name = cur_path.split('/')[-1]
-    args.output_dir = os.path.join('/mnt/lustre/huanglj.vendor/code', task_name, project_name, args.output_dir)
+    args.output_dir = os.path.join('./output', task_name, project_name, args.output_dir)
 
     if args.output_dir:
         Path(args.output_dir).mkdir(parents=True, exist_ok=True)
