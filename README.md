@@ -66,15 +66,19 @@ $\dagger$ tricks denote dropout rate 0 within transformer, mixed query selection
 
 $\ddagger$ using top 300 predictions for evaluation.
 
+
+## Update
+
+- **2024.03.18**: This repo is released :fire:
+
 ## Installation
 We test our models under ```python=3.7.10,pytorch=1.10.1,cuda=10.2```. Other versions might be available as well.
 
 1. Clone this repo
 ```sh
-git https://github.com/HDETR/H-Deformable-DETR.git
-cd H-Deformable-DETR
+git https://github.com/LeonHLJ/Teach-DETR.git
+cd Teach-DETR
 ```
-
 2. Install Pytorch and torchvision
 
 Follow the instruction on https://pytorch.org/get-started/locally/.
