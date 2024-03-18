@@ -120,16 +120,16 @@ coco_path/
 
 ```Bash
 GPUS_PER_NODE=8 ./tools/run_dist_launch.sh 8 <config path> \
-    --coco_path <coco path>
+    --coco_path <coco path> --ensemble
 ```
 
-To train/eval a model with the swin transformer backbone, you need to download the backbone from the [offical repo](https://github.com/microsoft/Swin-Transformer#main-results-on-imagenet-with-pretrained-models) frist and specify argument`--pretrained_backbone_path` like [our configs](./configs/two_stage/deformable-detr-hybrid-branch/36eps/swin).
+To train/eval a model with the swin transformer backbone, you need to download the backbone from the [offical repo](https://github.com/microsoft/Swin-Transformer#main-results-on-imagenet-with-pretrained-models) frist and specify argument`--pretrained_backbone_path` like [h-detr configs](./configs/two_stage/deformable-detr-hybrid-branch/36eps/swin).
 
 ### To eval a model using 8 cards
 
 ```Bash
 GPUS_PER_NODE=8 ./tools/run_dist_launch.sh 8 <config path> \
-    --coco_path <coco path> --eval --resume <checkpoint path>
+    --coco_path <coco path> --eval --resume <checkpoint path> --ensemble
 ```
 
 ### Distributed Run
