@@ -69,7 +69,7 @@ $\ddagger$ using top 300 predictions for evaluation.
 
 ## Update
 
-- **2024.03.18**: This repo is released :fire:
+- **2024.03.18**: The code for H-Deformable DETR is released :fire:
 
 ## Installation
 We test our models under ```python=3.7.10,pytorch=1.10.1,cuda=10.2```. Other versions might be available as well.
